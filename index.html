@@ -4,3 +4,24 @@
 <p>The objective of the game is to get three in a row.</p>
 <p>You can play as many times as you want.</p>
 <p>Good luck and enjoy!</p>
+
+var playerTurn;
+var NUM_COLS;
+var SYMBOLS;
+
+var tiles = [];
+
+var checkWin = function() {
+
+};
+
+Tile.prototype.draw = function() {
+    fill(214, 247, 202);
+    strokeWeight(2);
+    rect(this.x, this.y, this.size, this.size, 10);
+    textSize(100);
+    textAlign(CENTER, CENTER);
+    fill(0, 0, 0);
+    text(this.label, this.x+this.size/2, this.y+this.size/2);
+};
+
